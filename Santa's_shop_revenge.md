@@ -19,8 +19,6 @@ Khi truy cập vào link ta sẽ thấy 1 chuỗi base64, copy và decode nó s�
 *Giải thích đoạn này 1 chút tại sao ta cần phải encode sang base64. Vì trong các loại file như secret sẽ có thể chứa các kí tự đặc biệt như <, >, /. Có thể khiến web tưởng đây là code HTML nên sẽ thực thi nó.
 Để tránh điều này ta sẽ encode sang base64 rồi decode ngược lại thì sẽ an toàn hơn. OK?🧐
 
-<img width="488" height="478" alt="image" src="https://github.com/user-attachments/assets/402bbc6e-c7f2-4151-84ca-c690d28c6c68" />
-
 Tiếp theo sẽ áp dụng SSRF
 Payload: http://67.223.119.69:5027/file.php?image=http://127.0.0.1/admin.php?username=TH%26coin= 36363636%26secret=ChiCon1BuocNuaThoi~_~
 
